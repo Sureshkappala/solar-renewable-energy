@@ -1,0 +1,403 @@
+/*================ GOOGLE FONT ================*/
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:
+linear-gradient(rgba(5,18,32,.75),rgba(5,18,32,.82)),
+url("../images/login-bg.webp");
+
+background-size:cover;
+
+background-position:center;
+
+overflow:hidden;
+
+}
+
+/*================ CONTAINER ================*/
+
+.login-container{
+
+width:1200px;
+
+max-width:95%;
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+border-radius:30px;
+
+overflow:hidden;
+
+box-shadow:0 25px 70px rgba(0,0,0,.35);
+
+}
+
+/*================ IMAGE ================*/
+
+.login-image{
+
+height:720px;
+
+overflow:hidden;
+
+}
+
+.login-image img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+transition:.5s;
+
+}
+
+.login-image:hover img{
+
+transform:scale(1.05);
+
+}
+
+/*================ LOGIN BOX ================*/
+
+.login-box{
+
+padding:60px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+background:rgba(8,24,38,.85);
+
+}
+
+.logo{
+
+width:90px;
+
+margin-bottom:20px;
+
+}
+
+.login-box h2{
+
+font-size:42px;
+
+color:#fff;
+
+margin-bottom:10px;
+
+}
+
+.login-box p{
+
+color:#cbd5e1;
+
+margin-bottom:35px;
+
+}
+
+/*================ FORM ================*/
+
+.login-box form{
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+.login-box input,
+.login-box select{
+
+width:100%;
+
+padding:16px 20px;
+
+border:none;
+
+outline:none;
+
+border-radius:14px;
+
+font-size:16px;
+
+background:rgba(255,255,255,.10);
+
+color:#fff;
+
+}
+
+.login-box input::placeholder{
+
+color:#d1d5db;
+
+}
+
+.login-box select{
+
+cursor:pointer;
+
+}
+
+/*================ PASSWORD ================*/
+
+.password-box{
+
+position:relative;
+
+}
+
+.password-box input{
+
+padding-right:55px;
+
+}
+
+.password-box i{
+
+position:absolute;
+
+top:50%;
+
+right:20px;
+
+transform:translateY(-50%);
+
+cursor:pointer;
+
+color:#22c55e;
+
+font-size:18px;
+
+}
+
+/*================ REMEMBER ================*/
+
+.remember{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+font-size:15px;
+
+color:#fff;
+
+}
+
+.remember a{
+
+color:#22c55e;
+
+text-decoration:none;
+
+}
+
+/*================ BUTTON ================*/
+
+button{
+
+padding:16px;
+
+border:none;
+
+border-radius:50px;
+
+background:linear-gradient(135deg,#22c55e,#06b6d4);
+
+color:#fff;
+
+font-size:18px;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.35s;
+
+}
+
+button:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 15px 35px rgba(34,197,94,.35);
+
+}
+
+/*================ FOOTER TEXT ================*/
+
+.login-box p:last-child{
+
+text-align:center;
+
+margin-top:15px;
+
+}
+
+.login-box p a{
+
+color:#22c55e;
+
+text-decoration:none;
+
+font-weight:600;
+
+}
+
+/*================ RESPONSIVE ================*/
+
+@media(max-width:991px){
+
+.login-container{
+
+grid-template-columns:1fr;
+
+}
+
+.login-image{
+
+display:none;
+
+}
+
+.login-box{
+
+padding:40px 30px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.login-box h2{
+
+font-size:34px;
+
+}
+
+.remember{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:10px;
+
+}
+
+button{
+
+font-size:16px;
+
+}
+
+}
+.login-image{
+
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    min-height: 720px;
+
+}
+
+.login-image img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+
+}
+.login-container{
+
+    width: 1400px;
+    max-width: 95%;
+    height: 820px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    border-radius: 30px;
+    overflow: hidden;
+
+}
+
+.login-box{
+
+    padding:70px 65px;
+
+}
+.login-image{
+    position: relative;
+    min-height: 820px;
+    overflow: hidden;
+}
+
+.login-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+    display:block;
+}
+
+.login-image::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        rgba(5,18,32,.25),
+        rgba(5,18,32,.45)
+    );
+}
+.login-container{
+
+    width:1450px;
+    max-width:95%;
+
+    height:820px;
+
+    display:grid;
+
+    grid-template-columns:52% 48%;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+}
