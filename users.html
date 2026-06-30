@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Users | Stackly Admin</title>
+
+<link rel="stylesheet" href="css/admin.css">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<aside class="sidebar">
+
+<div class="logo">
+<img src="images/logo.webp" alt="Stackly">
+</div>
+
+<ul>
+
+<li>
+<a href="admin-dashboard.html">
+<i class="fas fa-chart-line"></i>
+Dashboard
+</a>
+</li>
+
+<li class ="active">
+<a href="users.html">
+<i class="fas fa-users"></i>
+Users
+</a>
+</li>
+
+<li>
+<a href="services-admin.html">
+<i class="fas fa-solar-panel"></i>
+Services
+</a>
+</li>
+
+<li>
+<a href="projects.html">
+<i class="fas fa-briefcase"></i>
+Projects
+</a>
+</li>
+
+<li>
+<a href="messages.html">
+<i class="fas fa-envelope"></i>
+Messages
+</a>
+</li>
+
+<li>
+<a href="settings.html">
+<i class="fas fa-cog"></i>
+Settings
+</a>
+</li>
+
+<li>
+<a href="login.html">
+<i class="fas fa-sign-out-alt"></i>
+Logout
+</a>
+</li>
+
+</ul>
+
+</aside>
+
+<!-- Main -->
+
+<div class="main">
+
+<header class="topbar">
+
+<h2>Users Management</h2>
+
+<div class="profile">
+
+<i class="fas fa-bell"></i>
+
+<img src="images/admin.webp">
+
+</div>
+
+</header>
+
+<!-- Top Buttons -->
+
+<div class="table-header">
+
+<input type="text" placeholder="Search Users...">
+
+<button>
+
+<i class="fas fa-plus"></i>
+
+Add User
+
+</button>
+
+</div>
+
+<!-- User Table -->
+
+<section class="table-section">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Name</th>
+
+<th>Email</th>
+
+<th>Role</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>001</td>
+
+<td>Suresh</td>
+
+<td>suresh@gmail.com</td>
+
+<td>Admin</td>
+
+<td><span class="success">Active</span></td>
+
+<td>
+
+<button class="edit">
+
+Edit
+
+</button>
+
+<button class="delete">
+
+Delete
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>002</td>
+
+<td>Rahul</td>
+
+<td>rahul@gmail.com</td>
+
+<td>User</td>
+
+<td><span class="pending">Inactive</span></td>
+
+<td>
+
+<button class="edit">
+
+Edit
+
+</button>
+
+<button class="delete">
+
+Delete
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>003</td>
+
+<td>John</td>
+
+<td>john@gmail.com</td>
+
+<td>User</td>
+
+<td><span class="success">Active</span></td>
+
+<td>
+
+<button class="edit">
+
+Edit
+
+</button>
+
+<button class="delete">
+
+Delete
+
+</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+<section class="user-stats">
+
+<div class="stat-card">
+
+<i class="fas fa-users"></i>
+
+<h3>1,250</h3>
+
+<p>Total Users</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fas fa-user-check"></i>
+
+<h3>980</h3>
+
+<p>Active Users</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fas fa-user-clock"></i>
+
+<h3>270</h3>
+
+<p>Pending Users</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fas fa-user-plus"></i>
+
+<h3>45</h3>
+
+<p>New This Month</p>
+
+</div>
+
+</section>
+<section class="recent-users">
+
+<h3>Recent Registrations</h3>
+
+<div class="recent-grid">
+
+<div class="recent-card">
+
+<img src="images/user.webp">
+
+<h4>Rahul Kumar</h4>
+
+<p>Frontend Developer</p>
+
+<span>Today</span>
+
+</div>
+
+<div class="recent-card">
+
+<img src="images/user2.webp">
+
+<h4>Priya Sharma</h4>
+
+<p>UI Designer</p>
+
+<span>Yesterday</span>
+
+</div>
+
+<div class="recent-card">
+
+<img src="images/admin.webp">
+
+<h4>John David</h4>
+
+<p>Project Manager</p>
+
+<span>2 Days Ago</span>
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+<script src="js/admin.js"></script>
+
+</body>
+
+</html>

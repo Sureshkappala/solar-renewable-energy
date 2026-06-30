@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>User Dashboard | Stackly Renewable Energy</title>
+<title>My Projects | Stackly Renewable Energy</title>
 
 <link rel="stylesheet" href="css/user.css">
 
@@ -23,19 +23,21 @@
 <aside class="sidebar">
 
 <div class="logo">
-<img src="images/logo.webp" alt="Stackly">
+
+<img src="images/logo.webp">
+
 </div>
 
 <ul>
 
-<li class="active">
+<li>
 <a href="user-dashboard.html">
 <i class="fas fa-home"></i>
 Dashboard
 </a>
 </li>
 
-<li>
+<li class="active">
 <a href="my-projects.html">
 <i class="fas fa-solar-panel"></i>
 My Projects
@@ -74,13 +76,11 @@ Logout
 
 </aside>
 
-<!-- Main -->
-
 <div class="main">
 
 <header class="topbar">
 
-<h2>Welcome, Suresh 👋</h2>
+<h2>My Projects</h2>
 
 <div class="profile">
 
@@ -92,22 +92,6 @@ Logout
 
 </header>
 
-<!-- Welcome -->
-
-<section class="welcome-card">
-
-<h2>Renewable Energy Dashboard</h2>
-
-<p>
-
-Monitor your renewable energy projects,
-track your energy generation,
-and manage your services easily.
-
-</p>
-
-</section>
-
 <!-- Statistics -->
 
 <section class="cards">
@@ -118,47 +102,53 @@ and manage your services easily.
 
 <h3>12</h3>
 
-<p>Solar Projects</p>
+<p>Total Projects</p>
 
 </div>
 
 <div class="card">
 
-<i class="fas fa-bolt"></i>
-
-<h3>145 KW</h3>
-
-<p>Energy Generated</p>
-
-</div>
-
-<div class="card">
-
-<i class="fas fa-leaf"></i>
-
-<h3>98%</h3>
-
-<p>Efficiency</p>
-
-</div>
-
-<div class="card">
-
-<i class="fas fa-award"></i>
+<i class="fas fa-spinner"></i>
 
 <h3>5</h3>
 
-<p>Certificates</p>
+<p>Running</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-check-circle"></i>
+
+<h3>6</h3>
+
+<p>Completed</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-clock"></i>
+
+<h3>1</h3>
+
+<p>Pending</p>
 
 </div>
 
 </section>
 
-<!-- My Projects -->
+<div class="table-header">
+
+<input type="text" placeholder="Search Project...">
+
+</div>
+
+<!-- Project Table -->
 
 <section class="table-section">
 
-<h3>My Projects</h3>
+<h3>Project List</h3>
 
 <table>
 
@@ -168,9 +158,9 @@ and manage your services easily.
 
 <th>Project</th>
 
-<th>Status</th>
-
 <th>Location</th>
+
+<th>Status</th>
 
 <th>Completion</th>
 
@@ -184,9 +174,9 @@ and manage your services easily.
 
 <td>Solar Rooftop</td>
 
-<td><span class="success">Running</span></td>
-
 <td>Salem</td>
+
+<td><span class="success">Running</span></td>
 
 <td>85%</td>
 
@@ -196,11 +186,11 @@ and manage your services easily.
 
 <td>Battery Storage</td>
 
-<td><span class="pending">Pending</span></td>
-
 <td>Chennai</td>
 
-<td>40%</td>
+<td><span class="pending">Pending</span></td>
+
+<td>45%</td>
 
 </tr>
 
@@ -208,9 +198,9 @@ and manage your services easily.
 
 <td>EV Charging</td>
 
-<td><span class="success">Completed</span></td>
-
 <td>Coimbatore</td>
+
+<td><span class="success">Completed</span></td>
 
 <td>100%</td>
 
@@ -221,61 +211,109 @@ and manage your services easily.
 </table>
 
 </section>
-<section class="activity-section">
 
-    <h3>Recent Activities</h3>
+<!-- Progress -->
 
-    <div class="activity-list">
+<section class="ongoing-projects">
 
-        <div class="activity-item">
+<h3>Project Progress</h3>
 
-            <i class="fas fa-solar-panel"></i>
+<div class="project-grid">
 
-            <div>
+<div class="project-card">
 
-                <h4>Solar Project Updated</h4>
+<h4>Solar Rooftop</h4>
 
-                <p>Your rooftop solar project reached 85% completion.</p>
+<p>85% Completed</p>
 
-            </div>
+<div class="progress">
 
-            <span>Today</span>
+<div class="progress-fill" style="width:85%"></div>
 
-        </div>
+</div>
 
-        <div class="activity-item">
+</div>
 
-            <i class="fas fa-bolt"></i>
+<div class="project-card">
 
-            <div>
+<h4>Battery Storage</h4>
 
-                <h4>Energy Generated</h4>
+<p>45% Completed</p>
 
-                <p>145 KW energy generated this week.</p>
+<div class="progress">
 
-            </div>
+<div class="progress-fill" style="width:45%"></div>
 
-            <span>Yesterday</span>
+</div>
 
-        </div>
+</div>
 
-        <div class="activity-item">
+<div class="project-card">
 
-            <i class="fas fa-award"></i>
+<h4>EV Charging</h4>
 
-            <div>
+<p>100% Completed</p>
 
-                <h4>Certificate Earned</h4>
+<div class="progress">
 
-                <p>Congratulations! Green Energy certificate awarded.</p>
+<div class="progress-fill" style="width:100%"></div>
 
-            </div>
+</div>
 
-            <span>2 Days Ago</span>
+</div>
 
-        </div>
+</div>
 
-    </div>
+</section>
+<!--================ PROJECT ACHIEVEMENTS =================-->
+
+<section class="achievements">
+
+<h3>Project Achievements</h3>
+
+<div class="achievement-grid">
+
+<div class="achievement-card">
+
+<i class="fas fa-award"></i>
+
+<h4>12</h4>
+
+<p>Projects Completed</p>
+
+</div>
+
+<div class="achievement-card">
+
+<i class="fas fa-bolt"></i>
+
+<h4>145 KW</h4>
+
+<p>Energy Generated</p>
+
+</div>
+
+<div class="achievement-card">
+
+<i class="fas fa-leaf"></i>
+
+<h4>20 Tons</h4>
+
+<p>CO₂ Reduced</p>
+
+</div>
+
+<div class="achievement-card">
+
+<i class="fas fa-star"></i>
+
+<h4>4.9 ★</h4>
+
+<p>Customer Rating</p>
+
+</div>
+
+</div>
 
 </section>
 

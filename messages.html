@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Messages | Stackly Admin</title>
+
+<link rel="stylesheet" href="css/admin.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<aside class="sidebar">
+
+<div class="logo">
+
+<img src="images/logo.webp">
+
+</div>
+
+<ul>
+
+<li><a href="admin-dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+
+<li><a href="users.html"><i class="fas fa-users"></i> Users</a></li>
+
+<li><a href="services-admin.html"><i class="fas fa-solar-panel"></i> Services</a></li>
+
+<li><a href="projects.html"><i class="fas fa-folder-open"></i> Projects</a></li>
+
+<li class="active"><a href="messages.html"><i class="fas fa-envelope"></i> Messages</a></li>
+
+<li><a href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+
+<li><a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+
+</ul>
+
+</aside>
+
+<!-- Main -->
+
+<div class="main">
+
+<header class="topbar">
+
+<h2>Messages Management</h2>
+
+<div class="profile">
+
+<i class="fas fa-bell"></i>
+
+<img src="images/admin.webp">
+
+</div>
+
+</header>
+
+<!-- Statistics -->
+
+<section class="service-stats">
+
+<div class="stat-card">
+
+<i class="fas fa-envelope"></i>
+
+<h3>325</h3>
+
+<p>Total Messages</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fas fa-envelope-open"></i>
+
+<h3>210</h3>
+
+<p>Read</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fas fa-envelope-circle-check"></i>
+
+<h3>95</h3>
+
+<p>Unread</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fas fa-reply"></i>
+
+<h3>20</h3>
+
+<p>Replied</p>
+
+</div>
+
+</section>
+
+<div class="table-header">
+
+<input type="text" placeholder="Search Messages...">
+
+<button>
+
+<i class="fas fa-sync-alt"></i>
+
+Refresh
+
+</button>
+
+</div>
+
+<!-- Messages Table -->
+
+<section class="table-section">
+
+<h3>Customer Messages</h3>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+
+<th>Email</th>
+
+<th>Subject</th>
+
+<th>Status</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Suresh</td>
+
+<td>suresh@gmail.com</td>
+
+<td>Solar Installation</td>
+
+<td><span class="pending">Unread</span></td>
+
+<td>
+
+<button class="edit">Reply</button>
+
+<button class="delete">Delete</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Rahul</td>
+
+<td>rahul@gmail.com</td>
+
+<td>Wind Energy</td>
+
+<td><span class="success">Read</span></td>
+
+<td>
+
+<button class="edit">Reply</button>
+
+<button class="delete">Delete</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>John</td>
+
+<td>john@gmail.com</td>
+
+<td>Battery Storage</td>
+
+<td><span class="success">Replied</span></td>
+
+<td>
+
+<button class="edit">Reply</button>
+
+<button class="delete">Delete</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+<!-- Recent Inquiries -->
+
+<section class="recent-users">
+
+<h3>Recent Customer Inquiries</h3>
+
+<div class="recent-grid">
+
+<div class="recent-card">
+
+<img src="images/user.webp">
+
+<h4>Rahul Kumar</h4>
+
+<p>Solar Installation Request</p>
+
+<span>Today</span>
+
+</div>
+
+<div class="recent-card">
+
+<img src="images/user2.webp">
+
+<h4>Priya Sharma</h4>
+
+<p>Battery Storage Inquiry</p>
+
+<span>Yesterday</span>
+
+</div>
+
+<div class="recent-card">
+
+<img src="images/admin.webp">
+
+<h4>John David</h4>
+
+<p>Wind Farm Consultation</p>
+
+<span>2 Days Ago</span>
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+<script src="js/admin.js"></script>
+
+</body>
+
+</html>

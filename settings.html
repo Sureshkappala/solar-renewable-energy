@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Settings | Stackly Admin</title>
+
+<link rel="stylesheet" href="css/admin.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<aside class="sidebar">
+
+<div class="logo">
+
+<img src="images/logo.webp">
+
+</div>
+
+<ul>
+
+<li><a href="admin-dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+
+<li><a href="users.html"><i class="fas fa-users"></i> Users</a></li>
+
+<li><a href="services-admin.html"><i class="fas fa-solar-panel"></i> Services</a></li>
+
+<li><a href="projects.html"><i class="fas fa-folder-open"></i> Projects</a></li>
+
+<li><a href="messages.html"><i class="fas fa-envelope"></i> Messages</a></li>
+
+<li class="active"><a href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+
+<li><a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+
+</ul>
+
+</aside>
+
+<!-- Main -->
+
+<div class="main">
+
+<header class="topbar">
+
+<h2>Settings</h2>
+
+<div class="profile">
+
+<i class="fas fa-bell"></i>
+
+<img src="images/admin.webp">
+
+</div>
+
+</header>
+
+<!-- Profile -->
+
+<section class="settings-card">
+
+<h3>Admin Profile</h3>
+
+<div class="settings-grid">
+
+<input type="text" placeholder="Admin Name" value="David Anderson">
+
+<input type="email" placeholder="Email" value="admin@stackly.com">
+
+<input type="tel" placeholder="Phone" value="+91 9876543210">
+
+<input type="text" placeholder="Designation" value="Administrator">
+
+</div>
+
+<div class="card-btn">
+
+<button class="update-btn">
+
+<i class="fas fa-save"></i>
+
+Update Profile
+
+</button>
+
+</div>
+
+</section>
+
+<!-- Password -->
+
+<section class="settings-card">
+
+<h3>Change Password</h3>
+
+<div class="settings-grid">
+
+<input type="password" placeholder="Current Password">
+
+<input type="password" placeholder="New Password">
+
+<input type="password" placeholder="Confirm Password">
+
+</div>
+
+<div class="card-btn">
+
+<button class="update-btn">
+
+<i class="fas fa-key"></i>
+
+Update Password
+
+</button>
+
+</div>
+
+</section>
+
+<!-- Website -->
+
+<section class="settings-card">
+
+<h3>Website Settings</h3>
+
+<div class="settings-grid">
+
+<input type="text" placeholder="Company Name">
+
+<input type="email" placeholder="Support Email">
+
+<input type="text" placeholder="Office Location">
+
+<select>
+
+<option>English</option>
+
+<option>Tamil</option>
+
+<option>Hindi</option>
+
+</select>
+
+</div>
+
+<div class="card-btn">
+
+<button class="update-btn">
+
+<i class="fas fa-globe"></i>
+
+Update Website
+
+</button>
+
+</div>
+
+</section>
+
+<!-- Preferences -->
+
+<section class="settings-card">
+
+<h3>Preferences</h3>
+
+<div class="toggle-group">
+
+<label>
+
+<input type="checkbox" checked>
+
+Email Notifications
+
+</label>
+
+<label>
+
+<input type="checkbox">
+
+SMS Notifications
+
+</label>
+
+<label>
+
+<input type="checkbox" checked>
+
+Dark Mode
+
+</label>
+<div class="card-btn">
+
+<button class="update-btn">
+
+<i class="fas fa-check"></i>
+
+Update Preferences
+
+</button>
+
+</div>
+
+
+</div>
+
+</section>
+
+<div class="save-btn">
+
+<button>
+
+<i class="fas fa-save"></i>
+
+Save Settings
+
+</button>
+
+</div>
+
+</div>
+
+<script src="js/admin.js"></script>
+
+</body>
+
+</html>

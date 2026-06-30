@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Projects Management | Stackly Admin</title>
+
+<link rel="stylesheet" href="css/admin.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<aside class="sidebar">
+
+<div class="logo">
+
+<img src="images/logo.webp">
+
+</div>
+
+<ul>
+
+<li>
+<a href="admin-dashboard.html">
+<i class="fas fa-chart-line"></i> Dashboard
+</a>
+</li>
+
+<li>
+<a href="users.html">
+<i class="fas fa-users"></i> Users
+</a>
+</li>
+
+<li>
+<a href="services-admin.html">
+<i class="fas fa-solar-panel"></i> Services
+</a>
+</li>
+
+<li class="active">
+<a href="projects.html">
+<i class="fas fa-folder-open"></i> Projects
+</a>
+</li>
+
+<li>
+<a href="messages.html">
+<i class="fas fa-envelope"></i> Messages
+</a>
+</li>
+
+<li>
+<a href="settings.html">
+<i class="fas fa-cog"></i> Settings
+</a>
+</li>
+
+<li>
+<a href="login.html">
+<i class="fas fa-sign-out-alt"></i> Logout
+</a>
+</li>
+
+</ul>
+
+</aside>
+
+<div class="main">
+
+<header class="topbar">
+
+<h2>Projects Management</h2>
+
+<div class="profile">
+
+<i class="fas fa-bell"></i>
+
+<img src="images/admin.webp">
+
+</div>
+
+</header>
+
+<!-- Statistics -->
+
+<section class="service-stats">
+
+<div class="stat-card">
+
+<i class="fas fa-folder-open"></i>
+
+<h3>86</h3>
+
+<p>Total Projects</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fas fa-spinner"></i>
+
+<h3>24</h3>
+
+<p>Running</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fas fa-check-circle"></i>
+
+<h3>58</h3>
+
+<p>Completed</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fas fa-clock"></i>
+
+<h3>4</h3>
+
+<p>Pending</p>
+
+</div>
+
+</section>
+
+<div class="table-header">
+
+<input type="text" placeholder="Search Projects...">
+
+<button>
+
+<i class="fas fa-plus"></i>
+
+Add Project
+
+</button>
+
+</div>
+
+<!-- Projects Table -->
+
+<section class="table-section">
+
+<h3>Project List</h3>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Project</th>
+
+<th>Location</th>
+
+<th>Status</th>
+
+<th>Progress</th>
+
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>Solar Plant Alpha</td>
+
+<td>Chennai</td>
+
+<td><span class="success">Completed</span></td>
+
+<td>100%</td>
+
+<td>
+
+<button class="edit">Edit</button>
+
+<button class="delete">Delete</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Wind Farm Beta</td>
+
+<td>Coimbatore</td>
+
+<td><span class="pending">Running</span></td>
+
+<td>75%</td>
+
+<td>
+
+<button class="edit">Edit</button>
+
+<button class="delete">Delete</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>Battery Storage</td>
+
+<td>Salem</td>
+
+<td><span class="pending">Running</span></td>
+
+<td>55%</td>
+
+<td>
+
+<button class="edit">Edit</button>
+
+<button class="delete">Delete</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+<!-- Ongoing Projects -->
+
+<section class="ongoing-projects">
+
+<h3>Ongoing Projects</h3>
+
+<div class="project-grid">
+
+<div class="project-card">
+
+<h4>Solar Mega Park</h4>
+
+<p>Progress: 85%</p>
+
+<div class="progress">
+
+<div class="progress-fill" style="width:85%"></div>
+
+</div>
+
+</div>
+
+<div class="project-card">
+
+<h4>Wind Energy Hub</h4>
+
+<p>Progress: 65%</p>
+
+<div class="progress">
+
+<div class="progress-fill" style="width:65%"></div>
+
+</div>
+
+</div>
+
+<div class="project-card">
+
+<h4>EV Charging Network</h4>
+
+<p>Progress: 45%</p>
+
+<div class="progress">
+
+<div class="progress-fill" style="width:45%"></div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+<script src="js/admin.js"></script>
+
+</body>
+
+</html>
