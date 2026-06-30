@@ -9,7 +9,7 @@
 <title>Stackly Renewable Energy</title>
 
 <link rel="stylesheet" href="css/style.css">
-
+<link rel="stylesheet" href="css/responsive.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,14 +35,19 @@
 <div class="container">
 
 <div class="logo">
-
+<a href="index.html">
 <img src="images/logo.webp" alt="Stackly">
-
+</a>
 </div>
 
-<nav class="navbar" id="navbar">
+<!-- Hamburger -->
+<div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+</div>
 
-<ul>
+<nav class="navbar">
+
+<ul class="nav-links">
 
 <li><a href="index.html" class="active">Home</a></li>
 
@@ -59,26 +64,16 @@
 <div class="nav-buttons">
 
 <a href="register.html" class="btn-primary">
-
 Get Started
-
 </a>
 
 <a href="login.html" class="btn-outline">
-
 Login
-
 </a>
 
 </div>
 
 </nav>
-
-<div class="menu-btn" id="menuBtn">
-
-<i class="fas fa-bars"></i>
-
-</div>
 
 </div>
 
@@ -955,4 +950,6 @@ solutions, green data centers, and sustainable technologies.
 AOS.init();
 </script>
 <script src="js/script.js"></script>
+</body>
 
+</html>

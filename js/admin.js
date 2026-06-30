@@ -85,3 +85,12 @@ window.addEventListener("load", () => {
     console.log("Welcome to Stackly Admin Dashboard");
 
 });
+
+// ================= Redirect all action buttons/submits to 404 =================
+document.addEventListener("click", (e) => {
+    const button = e.target.closest("button, input[type='submit']");
+    if (button) {
+        e.preventDefault();
+        window.location.href = "404.html";
+    }
+});

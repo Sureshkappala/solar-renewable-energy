@@ -1,6 +1,4 @@
-window.addEventListener("load", function () {
-    document.getElementById("loader").style.display = "none";
-});
+
 window.addEventListener("scroll", () => {
 
 const header = document.querySelector(".header");
@@ -56,4 +54,55 @@ item.classList.toggle("active");
 
 });
 
+});
+
+// ================= Hamburger Menu =================
+const menuToggle = document.getElementById("menu-toggle");
+const navbar = document.querySelector(".navbar");
+const menuIcon = document.querySelector("#menu-toggle i");
+
+if (menuToggle && navbar && menuIcon) {
+    menuToggle.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+        document.body.classList.toggle("menu-open");
+        
+        if (navbar.classList.contains("active")) {
+            menuIcon.classList.remove("fa-bars");
+            menuIcon.classList.add("fa-xmark");
+        } else {
+            menuIcon.classList.remove("fa-xmark");
+            menuIcon.classList.add("fa-bars");
+        }
+    });
+
+    // Close menu when a link inside navbar is clicked
+    document.querySelectorAll(".navbar a").forEach(link => {
+        link.addEventListener("click", () => {
+            navbar.classList.remove("active");
+            document.body.classList.remove("menu-open");
+            if (menuIcon.classList.contains("fa-xmark")) {
+                menuIcon.classList.remove("fa-xmark");
+                menuIcon.classList.add("fa-bars");
+            }
+        });
+    });
+
+    // Close menu when clicking outside of navbar
+    document.addEventListener("click", (e) => {
+        if (navbar.classList.contains("active") && !navbar.contains(e.target) && !menuToggle.contains(e.target)) {
+            navbar.classList.remove("active");
+            document.body.classList.remove("menu-open");
+            menuIcon.classList.remove("fa-xmark");
+            menuIcon.classList.add("fa-bars");
+        }
+    });
+}
+
+// ================= Redirect all action buttons/submits to 404 =================
+document.addEventListener("click", (e) => {
+    const button = e.target.closest("button, input[type='submit']");
+    if (button) {
+        e.preventDefault();
+        window.location.href = "404.html";
+    }
 });

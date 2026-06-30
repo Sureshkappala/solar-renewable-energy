@@ -352,11 +352,13 @@ justify-content:center;
 
 padding:15px;
 
+font-size:0;
+
 }
 
-.sidebar ul li a span{
+.sidebar ul li a i{
 
-display:none;
+font-size:22px;
 
 }
 
